@@ -4,13 +4,14 @@ Reproducing Figure 1 from [Jain et al. 2025](https://www.nature.com/articles/s41
 
 ## Results
 
-**Annotated UMAP** — ~41,000 cells across 6 timepoints (Day 5–30), integrated with CSS and annotated by cell type:
+### Paper (Fig 1b–c) vs My Reproduction
 
-![Annotated UMAP](figures/umap_annotated.png)
-
-**Cell type proportions over time** — shows the developmental trajectory from neurectoderm to telencephalic/diencephalic progenitors:
-
-![Barplot](figures/barplot_timepoint.png)
+| | Paper | My reproduction |
+|:---:|:---:|:---:|
+| **Fig 1b** | <img src="figures/paper_fig1b_umap.jpg" width="300"> | <img src="figures/umap_annotated.png" width="300"> |
+| Annotated UMAP (~41,000 cells, Day 5–30) | 15 clusters, 8 cell types | 14 clusters, 7 cell types |
+| **Fig 1c** | <img src="figures/paper_fig1c_barplot.jpg" width="300"> | <img src="figures/barplot_timepoint.png" width="300"> |
+| Cell type proportions over time | Neurectoderm → Tel/Die progenitors | Neurectoderm → Tel/Die progenitors |
 
 ## Pipeline
 
