@@ -1,26 +1,33 @@
 # Morphodynamics of Human Early Brain Organoid Development
 
-Reproducing Figure 1 from [Jain et al. 2025](https://www.nature.com/articles/s41586-025-09151-3) (Nature), which maps the transcriptomic landscape of human brain organoid development from Day 5 to Day 30. This work was done as part of my rotation in the Treutlein lab (ETH Zurich / QuadBio, Basel).
+Reproducing Figure 1 from [Jain et al. 2025](https://www.nature.com/articles/s41586-025-09151-3) (Nature), which maps the transcriptomic landscape of human brain organoid development from Day 5 to Day 30. This is part of my self-directed effort to build skills in single-cell genomics and computational biology.
 
-## What I'm reproducing
+## Results
 
-**Figure 1b-d**: Timecourse scRNA-seq integration across 6 timepoints (~41,000 cells), including:
-- QC filtering, log-normalization, and cell cycle regression
-- Integration with Cluster Similarity Spectrum (CSS)
-- UMAP visualization with cluster annotation
-- Dot plot analysis for cell type identification
-- Stacked bar plot of cell type proportions over time
+**Annotated UMAP** — ~41,000 cells across 6 timepoints (Day 5–30), integrated with CSS and annotated by cell type:
+
+![Annotated UMAP](figures/umap_annotated.png)
+
+**Cell type proportions over time** — shows the developmental trajectory from neurectoderm to telencephalic/diencephalic progenitors:
+
+![Barplot](figures/barplot_timepoint.png)
+
+## Pipeline
+
+`fig1_morphodynamics_prescale.R` implements the full analysis:
+
+1. QC filtering (nFeature 1,000–7,500, MT < 10%)
+2. Log-normalization and cell cycle scoring
+3. Scaling with cell cycle regression
+4. PCA and CSS integration across timepoints
+5. Cell cycle regression from CSS embeddings
+6. Clustering and UMAP
+7. Marker-based cell type annotation (dot plot + average expression)
+8. Visualization (annotated UMAP, timepoint UMAP, stacked bar plot)
 
 ## Cell types identified
 
-Neurectoderm, Late Neurectoderm, Prosencephalic progenitors, Telencephalic progenitors, Late Prosencephalic progenitors, Diencephalic progenitors, Tel/Die neurons
-
-## Scripts
-
-| File | Description |
-|------|-------------|
-| `fig1_morphodynamics_prescale.R` | Full pipeline: QC → normalization → CSS integration → clustering → annotation → UMAP |
-| `fig1_morphodynamics.R` | Initial exploratory analysis |
+Neurectoderm · Late Neurectoderm · Prosencephalic progenitors · Telencephalic progenitors · Late Prosencephalic progenitors · Diencephalic progenitors · Tel/Die neurons
 
 ## Tech Stack
 

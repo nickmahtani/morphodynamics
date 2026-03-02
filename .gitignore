@@ -11,14 +11,17 @@ transcription_factors.txt
 
 # Images / intermediate outputs
 *.png
+!figures/*.png
 *.docx
 
 # Working scripts / scratch
+fig1_morphodynamics.R
 inspect_her_rds.R
 fig1_integration.R
 fig1_annotate.R
 Untitled.R
 here.md
+My attempt at replicating figure 1 of this paper.md
 Claude drafts/
 
 # Obsidian
