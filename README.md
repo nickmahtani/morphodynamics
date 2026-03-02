@@ -8,9 +8,11 @@ Reproducing Figure 1 from [Jain et al. 2025](https://www.nature.com/articles/s41
 
 | | Paper | My reproduction |
 |:---:|:---:|:---:|
-| **Fig 1b** | <img src="figures/paper_fig1b_umap.jpg" width="300"> | <img src="figures/umap_annotated.png" width="300"> |
+| **Fig 1b** | <img src="figures/paper_fig1b_umap.png" width="300"> | <img src="figures/umap_annotated.png" width="300"> |
 | Annotated UMAP (~41,000 cells, Day 5–30) | 15 clusters, 8 cell types | 14 clusters, 7 cell types |
-| **Fig 1c** | <img src="figures/paper_fig1c_barplot.jpg" width="300"> | <img src="figures/barplot_timepoint.png" width="300"> |
+| **Timepoint UMAP** | <img src="figures/paper_fig1c_umap.png" width="300"> | <img src="figures/umap_timepoint.png" width="300"> |
+| UMAP colored by collection day | Day 5–30 temporal gradient | Day 5–30 temporal gradient |
+| **Fig 1c** | <img src="figures/paper_fig1c_barplot.png" width="300"> | <img src="figures/barplot_timepoint.png" width="300"> |
 | Cell type proportions over time | Neurectoderm → Tel/Die progenitors | Neurectoderm → Tel/Die progenitors |
 
 ## Pipeline
