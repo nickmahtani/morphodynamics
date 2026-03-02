@@ -1,0 +1,36 @@
+# Data files (large)
+data/
+My RDS Files/
+Her files/
+Comparing the rds/
+Homo_sapiens_TF.txt
+transcription_factors.txt
+
+# Paper PDF
+*.pdf
+
+# Images / intermediate outputs
+*.png
+*.docx
+
+# Working scripts / scratch
+inspect_her_rds.R
+fig1_integration.R
+fig1_annotate.R
+Untitled.R
+here.md
+Claude drafts/
+
+# Obsidian
+.obsidian/
+
+# R
+.RDataTmp
+.Rhistory
+anaconda_projects/
+
+# macOS
+.DS_Store
+
+# Temp Word files
+~$*
